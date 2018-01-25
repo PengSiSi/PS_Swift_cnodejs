@@ -1,0 +1,61 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'PS_Swift_cnodejs' do
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for PS_Swift_cnodejs
+
+  target 'PS_Swift_cnodejsTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+pod 'Alamofire'
+pod 'Kingfisher'
+pod “SwiftyJSON”
+pod 'SnapKit'
+pod 'ObjectMapper'
+# pod ‘RealmSwift’
+# pod 'SafeAreaExtension'
+# pod 'CLImagePickerTool', :git => 'https://github.com/Darren-chenchen/CLImagePickerTool.git'
+# pod 'RxSwift', '~> 3.6.1'           # 响应式编程框架 https://github.com/ReactiveX/RxSwift
+# pod 'RxCocoa', '~> 3.6.1'           # 响应式编程框架 https://github.com/ReactiveX/RxSwift
+# pod ‘BMPlayer’
+# pod 'Cache', '~> 4.0.4'
+# pod 'YFMoreViewController'
+# pod 'MonkeyKing'
+pod 'MJRefresh'                     # 上拉和下拉刷新框架 https://github.com/CoderMJLee/MJRefresh
+
+pod 'SVProgressHUD', '~> 2.1.2'     # 提示功能 https://github.com/SVProgressHUD/SVProgressHUD
+pod 'Then'
+pod 'Moya'
+pod 'Reusable'
+pod 'EmptyDataSet-Swift'
+pod 'IQKeyboardManagerSwift'
+pod 'HMSegmentedControl'
+pod 'HandyJSON', '~> 4.0.0-beta.1'
+pod 'MBProgressHUD'
+
+pod 'PKHUD'
+pod 'SwiftMessages'
+pod 'StatefulViewController'
+pod 'SKPhotoBrowser'
+pod 'PullToRefreshKit' , git: 'https://github.com/Joe0708/PullToRefreshKit.git'
+pod 'MarkdownView'
+pod 'IQKeyboardManagerSwift'
+
+# Rich text
+pod 'YYText', git: 'https://github.com/Joe0708/YYText'
+pod 'MarkdownView'
+pod 'RxOptional'
+pod 'Crashlytics'
+pod 'NSObject+Rx'
+
+  target 'PS_Swift_cnodejsUITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end

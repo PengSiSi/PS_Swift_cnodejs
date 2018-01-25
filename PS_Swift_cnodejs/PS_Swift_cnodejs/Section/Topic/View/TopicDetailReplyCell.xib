@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TopicDetailReplyCell" rowHeight="96" id="KGk-i7-Jjw" customClass="TopicDetailReplyCell" customModule="PS_Swift_cnodejs" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="347" height="96"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="347" height="95.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YYR-wQ-YoF">
+                        <rect key="frame" x="5" y="5" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="Cfq-vF-643"/>
+                            <constraint firstAttribute="height" constant="50" id="byT-O1-56A"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="思思" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i9L-K7-lTu">
+                        <rect key="frame" x="70" y="5" width="29" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2018-1-19 09:46" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8zV-zV-jvf">
+                        <rect key="frame" x="70" y="32" width="109.5" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="这个是很好的额，可以精华。。。" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="olh-cM-NpL">
+                        <rect key="frame" x="5" y="57" width="336" height="32"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="434" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rfi-xz-0ud">
+                        <rect key="frame" x="283.5" y="9" width="26.5" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ETd-kM-mul">
+                        <rect key="frame" x="322" y="7" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="LH3-ox-7Xm"/>
+                            <constraint firstAttribute="height" constant="20" id="tYF-oy-Nej"/>
+                        </constraints>
+                        <state key="normal" image="like"/>
+                        <state key="selected" image="liked"/>
+                        <connections>
+                            <action selector="zanAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="qWz-cA-LO9"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="YYR-wQ-YoF" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="3YM-G3-Pr7"/>
+                    <constraint firstItem="ETd-kM-mul" firstAttribute="leading" secondItem="Rfi-xz-0ud" secondAttribute="trailing" constant="12" id="3cK-hu-S1z"/>
+                    <constraint firstItem="ETd-kM-mul" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="7" id="59E-Ch-5Nm"/>
+                    <constraint firstItem="Rfi-xz-0ud" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="9" id="98V-IA-6KI"/>
+                    <constraint firstItem="olh-cM-NpL" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="ArT-s9-rk9"/>
+                    <constraint firstAttribute="bottom" secondItem="olh-cM-NpL" secondAttribute="bottom" constant="6.5" id="BVJ-zQ-3xM"/>
+                    <constraint firstAttribute="trailing" secondItem="ETd-kM-mul" secondAttribute="trailing" constant="5" id="IW6-Ij-D8b"/>
+                    <constraint firstAttribute="trailing" secondItem="olh-cM-NpL" secondAttribute="trailing" constant="6" id="Pxp-qS-mnE"/>
+                    <constraint firstItem="i9L-K7-lTu" firstAttribute="leading" secondItem="YYR-wQ-YoF" secondAttribute="trailing" constant="15" id="SfV-R8-YyN"/>
+                    <constraint firstItem="YYR-wQ-YoF" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="Zmg-6G-oaK"/>
+                    <constraint firstItem="olh-cM-NpL" firstAttribute="top" secondItem="8zV-zV-jvf" secondAttribute="bottom" constant="8" id="fZk-0s-bcE"/>
+                    <constraint firstItem="8zV-zV-jvf" firstAttribute="leading" secondItem="YYR-wQ-YoF" secondAttribute="trailing" constant="15" id="lMt-3m-bYW"/>
+                    <constraint firstItem="8zV-zV-jvf" firstAttribute="top" secondItem="i9L-K7-lTu" secondAttribute="bottom" constant="10" id="rRR-hO-vL5"/>
+                    <constraint firstItem="i9L-K7-lTu" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="sTK-bs-nkX"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="avaterImgView" destination="YYR-wQ-YoF" id="ZuR-hI-HZF"/>
+                <outlet property="contentLabel" destination="olh-cM-NpL" id="Vcl-Yw-gmF"/>
+                <outlet property="nickNameLabel" destination="i9L-K7-lTu" id="6Kc-uh-VF3"/>
+                <outlet property="timeLabel" destination="8zV-zV-jvf" id="CC2-0d-GBt"/>
+                <outlet property="zanCountLabel" destination="Rfi-xz-0ud" id="9HM-td-xag"/>
+            </connections>
+            <point key="canvasLocation" x="48.5" y="115"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="like" width="200" height="200"/>
+        <image name="liked" width="200" height="200"/>
+    </resources>
+</document>
