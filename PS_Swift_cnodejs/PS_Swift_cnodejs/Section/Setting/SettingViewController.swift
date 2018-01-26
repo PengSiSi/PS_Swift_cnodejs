@@ -20,7 +20,7 @@ class SettingViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Demos"
-        dataArray = ["Demo1", "Demo2", "下拉放大", "Moya Demo", "跳转到webView", "清除缓存", "给我评分", "意见反馈", "Node Demo", "CommentInputDemo", "RxSwift使用", "夜间模式"]
+        dataArray = ["Demo1", "Demo2", "下拉放大", "Moya Demo", "跳转到webView", "清除缓存", "给我评分", "意见反馈", "Node Demo", "CommentInputDemo", "RxSwift使用", "夜间模式", "SQLite使用"]
         setupUI()
     }
     
@@ -65,11 +65,11 @@ extension SettingViewController {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: settingCellID, for: indexPath)
         cell.selectionStyle = .none  // 取消选中效果
-        if indexPath.row == (dataArray?.count)! - 1 {
-            cell.textLabel?.text = (dataArray?[indexPath.row])! + String(cacheSize) + "M";
-        } else {
+//        if indexPath.row == (dataArray?.count)! - 1 {
+//            cell.textLabel?.text = (dataArray?[indexPath.row])! + String(cacheSize) + "M";
+//        } else {
             cell.textLabel?.text = dataArray?[indexPath.row];
-        }
+//        }
         return cell
     }
     
@@ -128,6 +128,9 @@ extension SettingViewController {
         }
         if indexPath.row == 11 {
             self.navigationController?.pushViewController(NightThemeViewController(), animated: true)
+        }
+        if indexPath.row == 12 {
+            self.navigationController?.pushViewController(ReadHistoryViewController(), animated: true)
         }
     }
 }

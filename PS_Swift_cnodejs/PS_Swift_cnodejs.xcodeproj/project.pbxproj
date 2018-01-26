@@ -49,7 +49,6 @@
 		F141B32E1FEB89B400FF05C4 /* Demo1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F141B32C1FEB899900FF05C4 /* Demo1ViewController.swift */; };
 		F141B32F1FEB89B800FF05C4 /* CollectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F141B32B1FEB899900FF05C4 /* CollectViewController.swift */; };
 		F141B3301FEB89BF00FF05C4 /* DownloadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F141B32D1FEB899900FF05C4 /* DownloadViewController.swift */; };
-		F141B3311FEB89C700FF05C4 /* BookListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F141B32A1FEB899900FF05C4 /* BookListViewController.swift */; };
 		F141B3331FEB89EE00FF05C4 /* Demo2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F141B3321FEB89EE00FF05C4 /* Demo2ViewController.swift */; };
 		F141B3381FEB933200FF05C4 /* ParallaxHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F141B3351FEB91D900FF05C4 /* ParallaxHeader.swift */; };
 		F141B3391FEB933200FF05C4 /* ParallaxHeaderMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F141B3361FEB91D900FF05C4 /* ParallaxHeaderMode.swift */; };
@@ -66,6 +65,11 @@
 		F15F96C81FECA67B00FFEB93 /* PullDownExpandViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15F96C71FECA67B00FFEB93 /* PullDownExpandViewController.swift */; };
 		F15F96CB1FECA71700FFEB93 /* NoticeBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15F96CA1FECA71700FFEB93 /* NoticeBar.swift */; };
 		F15F96CD1FECAE6800FFEB93 /* UWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15F96CC1FECAE6800FFEB93 /* UWebViewController.swift */; };
+		F161626F201ACA0400440238 /* BookListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F141B32A1FEB899900FF05C4 /* BookListViewController.swift */; };
+		F1616272201AD3EF00440238 /* SQLiteError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1616271201AD3EF00440238 /* SQLiteError.swift */; };
+		F1616274201AD47400440238 /* SQLiteDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1616273201AD47400440238 /* SQLiteDatabase.swift */; };
+		F1616277201B037400440238 /* ItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1616276201B037400440238 /* ItemModel.swift */; };
+		F1616279201B09D100440238 /* ReadHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1616278201B09D100440238 /* ReadHistoryViewController.swift */; };
 		F185EF8D1FCD29DD006B11A6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F185EF8C1FCD29DD006B11A6 /* ViewController.swift */; };
 		F185EF901FCD29DD006B11A6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F185EF8E1FCD29DD006B11A6 /* Main.storyboard */; };
 		F185EF921FCD29DD006B11A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F185EF911FCD29DD006B11A6 /* Assets.xcassets */; };
@@ -290,6 +294,10 @@
 		F15F96C71FECA67B00FFEB93 /* PullDownExpandViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullDownExpandViewController.swift; sourceTree = "<group>"; };
 		F15F96CA1FECA71700FFEB93 /* NoticeBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeBar.swift; sourceTree = "<group>"; };
 		F15F96CC1FECAE6800FFEB93 /* UWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UWebViewController.swift; sourceTree = "<group>"; };
+		F1616271201AD3EF00440238 /* SQLiteError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLiteError.swift; sourceTree = "<group>"; };
+		F1616273201AD47400440238 /* SQLiteDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLiteDatabase.swift; sourceTree = "<group>"; };
+		F1616276201B037400440238 /* ItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemModel.swift; sourceTree = "<group>"; };
+		F1616278201B09D100440238 /* ReadHistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadHistoryViewController.swift; sourceTree = "<group>"; };
 		F185EF871FCD29DD006B11A6 /* PS_Swift_cnodejs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PS_Swift_cnodejs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F185EF8C1FCD29DD006B11A6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F185EF8F1FCD29DD006B11A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -1153,6 +1161,7 @@
 		F141B3191FEB61CA00FF05C4 /* Demos */ = {
 			isa = PBXGroup;
 			children = (
+				F1616275201AFD6C00440238 /* SQLiteDemo */,
 				F125619F200EF75C0099360C /* NightThemeDemo */,
 				F1AAFD0C200DD93E00667CA5 /* RxSwiftDemo */,
 				F1E66274200CA550009EED6D /* CommentInputDemo */,
@@ -1235,6 +1244,24 @@
 			path = NoticeBar;
 			sourceTree = "<group>";
 		};
+		F1616270201AD3BF00440238 /* DB */ = {
+			isa = PBXGroup;
+			children = (
+				F1616271201AD3EF00440238 /* SQLiteError.swift */,
+				F1616273201AD47400440238 /* SQLiteDatabase.swift */,
+			);
+			path = DB;
+			sourceTree = "<group>";
+		};
+		F1616275201AFD6C00440238 /* SQLiteDemo */ = {
+			isa = PBXGroup;
+			children = (
+				F1616276201B037400440238 /* ItemModel.swift */,
+				F1616278201B09D100440238 /* ReadHistoryViewController.swift */,
+			);
+			path = SQLiteDemo;
+			sourceTree = "<group>";
+		};
 		F185EF7E1FCD29DD006B11A6 = {
 			isa = PBXGroup;
 			children = (
@@ -1260,6 +1287,7 @@
 		F185EF891FCD29DD006B11A6 /* PS_Swift_cnodejs */ = {
 			isa = PBXGroup;
 			children = (
+				F1616270201AD3BF00440238 /* DB */,
 				F1B260D41FEC8FF8004B3C7A /* API */,
 				F1970CCB2007452700EC46B9 /* App */,
 				F185EF911FCD29DD006B11A6 /* Assets.xcassets */,
@@ -1693,6 +1721,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F161626F201ACA0400440238 /* BookListViewController.swift in Sources */,
 				F100050B20118C4E00071D44 /* UIBarButtonItem+Extension.swift in Sources */,
 				F12561EE200F498B0099360C /* HTTPTool.swift in Sources */,
 				F1256193200EECDC0099360C /* LoginViewController.swift in Sources */,
@@ -1700,6 +1729,7 @@
 				F1A7601B2008969700C44DE4 /* UIView+Frame.swift in Sources */,
 				F100051020119D4900071D44 /* HotSearchCell.swift in Sources */,
 				F1A7601A2008969200C44DE4 /* UIView+Extension.swift in Sources */,
+				F1616274201AD47400440238 /* SQLiteDatabase.swift in Sources */,
 				F12561ED200F46B50099360C /* UserInfoModel.swift in Sources */,
 				F1A760102008819700C44DE4 /* UIDevice+Extension.swift in Sources */,
 				F1A7600F200880D500C44DE4 /* UIApplication+Extension.swift in Sources */,
@@ -1714,6 +1744,7 @@
 				F141B33D1FEBA1F900FF05C4 /* UIColor+Color.swift in Sources */,
 				F141B3381FEB933200FF05C4 /* ParallaxHeader.swift in Sources */,
 				F134DF25200702E200B394AD /* UITabBar+Extension.swift in Sources */,
+				F1616279201B09D100440238 /* ReadHistoryViewController.swift in Sources */,
 				F141B3391FEB933200FF05C4 /* ParallaxHeaderMode.swift in Sources */,
 				F1000509201184C400071D44 /* TopicDetailReplyCell.swift in Sources */,
 				F15F96CD1FECAE6800FFEB93 /* UWebViewController.swift in Sources */,
@@ -1729,7 +1760,6 @@
 				F141B33A1FEB933200FF05C4 /* UIScrollView+ParallaxHeader.swift in Sources */,
 				F1A7601720088D1A00C44DE4 /* NodeCell.swift in Sources */,
 				F1FE27A320102CFA004EEF6A /* PageStyle.swift in Sources */,
-				F141B3311FEB89C700FF05C4 /* BookListViewController.swift in Sources */,
 				F1B260DC1FEC924C004B3C7A /* DispatchQueueExtension.swift in Sources */,
 				F125619C200EF0460099360C /* Preference.swift in Sources */,
 				F141B3301FEB89BF00FF05C4 /* DownloadViewController.swift in Sources */,
@@ -1745,6 +1775,7 @@
 				F1AAFD13200DDD6C00667CA5 /* RxSwiftDemoViewController.swift in Sources */,
 				F141B32E1FEB89B400FF05C4 /* Demo1ViewController.swift in Sources */,
 				F1FE27AE2010352A004EEF6A /* TopicListCell.swift in Sources */,
+				F1616272201AD3EF00440238 /* SQLiteError.swift in Sources */,
 				F12561E5200F20BE0099360C /* Scheduler+Rx.swift in Sources */,
 				F1970CD92007593E00EC46B9 /* BaseTableViewCell.swift in Sources */,
 				F125FA001FCD3F6300C47EFC /* BaseNavigationController.swift in Sources */,
@@ -1761,6 +1792,7 @@
 				F1256198200EEECE0099360C /* SFHandoffSafariViewController.swift in Sources */,
 				F1FE27A520102D37004EEF6A /* PageTitleView.swift in Sources */,
 				F12561E8200F20BE0099360C /* Swift+Extension.swift in Sources */,
+				F1616277201B037400440238 /* ItemModel.swift in Sources */,
 				F1B260E51FEC98BF004B3C7A /* MoyaDemoViewController.swift in Sources */,
 				F143F6771FECE64E00A3BE55 /* BaseCollectionViewCell.swift in Sources */,
 				F12561A1200EF7720099360C /* NightThemeViewController.swift in Sources */,

@@ -29,6 +29,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // 基础配置
         configureBase()
         
+        // 数据库初始化
+        SQLiteDatabase.initDatabase()
+        
 //        // Override point for customization after application launch.
 //        window = UIWindow(frame: UIScreen.main.bounds)
 ////        // 检测第一次启动

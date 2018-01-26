@@ -8,6 +8,13 @@
 
 import UIKit
 
+// 用Swift 将协议（protocol）中的部分方法设计成可选（optional），该怎样实现？
+// 参考链接： http://www.cocoachina.com/ios/20171117/21214.html
+@objc  protocol BookListViewControllerProtocol {
+    func func1()
+    @objc optional func func2()
+}
+
 class BookListViewController: BaseViewController {
 
     override func viewDidLoad() {
