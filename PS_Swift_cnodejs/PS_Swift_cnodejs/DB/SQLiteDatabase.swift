@@ -186,7 +186,7 @@ public class SQLiteDatabase {
     // 加载浏览历史
     func loadReadHistory(count: Int) -> [ItemModel] {
         var items = [ItemModel]()
-        let sql = "SELECT * FROM \(TABLE_READ_HISTORY) order by created desc limit \(count)"
+        let sql = "SELECT * FROM \(TABLE_READ_HISTORY) order by tid desc limit \(count)"
         guard let statement = try? prepare(statement: sql) else {
             return items
         }

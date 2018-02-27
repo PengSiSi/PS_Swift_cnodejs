@@ -53,6 +53,8 @@ class MineViewController: UITableViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        // 不可以旋转
+        isAllowAutorotate = false
         loadData()
     }
 }

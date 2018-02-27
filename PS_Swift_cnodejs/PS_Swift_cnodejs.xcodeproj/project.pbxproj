@@ -42,6 +42,7 @@
 		F125F9FF1FCD3F2300C47EFC /* NoticeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F125F9FE1FCD3F2300C47EFC /* NoticeViewController.swift */; };
 		F125FA001FCD3F6300C47EFC /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F125F8EC1FCD3B5E00C47EFC /* BaseNavigationController.swift */; };
 		F125FA011FCD3F6300C47EFC /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F125F8ED1FCD3B5E00C47EFC /* BaseViewController.swift */; };
+		F12EBBBA2045035800C561A2 /* RxSwiftDemo1VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12EBBB92045035800C561A2 /* RxSwiftDemo1VC.swift */; };
 		F134DF25200702E200B394AD /* UITabBar+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F134DF24200702E200B394AD /* UITabBar+Extension.swift */; };
 		F134DF26200702F700B394AD /* UITabBar+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F134DF24200702E200B394AD /* UITabBar+Extension.swift */; };
 		F141B31C1FEB62FE00FF05C4 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F141B31B1FEB62FE00FF05C4 /* SettingViewController.swift */; };
@@ -82,6 +83,10 @@
 		F1970CD4200747E700EC46B9 /* FPSLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1970CD3200747E700EC46B9 /* FPSLabel.swift */; };
 		F1970CD92007593E00EC46B9 /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1970CD82007593E00EC46B9 /* BaseTableViewCell.swift */; };
 		F1A05E782010903500F6657D /* TopicDetailHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A05E772010903500F6657D /* TopicDetailHeaderView.swift */; };
+		F1A2CD68202A93CE00D51DA4 /* ArchitectureDemoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A2CD67202A93CE00D51DA4 /* ArchitectureDemoVC.swift */; };
+		F1A2CD6A202A953A00D51DA4 /* MVCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A2CD69202A953A00D51DA4 /* MVCViewController.swift */; };
+		F1A2CD6C202A954900D51DA4 /* MVPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A2CD6B202A954900D51DA4 /* MVPViewController.swift */; };
+		F1A2CD6E202A955800D51DA4 /* MVVMViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A2CD6D202A955800D51DA4 /* MVVMViewController.swift */; };
 		F1A5A85A2005EF4E00F57E80 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A5A8592005EF4E00F57E80 /* Date+Extension.swift */; };
 		F1A5A85B2005F1C000F57E80 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F125F8FD1FCD3B5E00C47EFC /* String+Extension.swift */; };
 		F1A7600C20085E9200C44DE4 /* FileManagerUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A7600B20085E9200C44DE4 /* FileManagerUtil.swift */; };
@@ -112,6 +117,7 @@
 		F1B260E01FEC92A0004B3C7A /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B260DF1FEC92A0004B3C7A /* UIViewExtension.swift */; };
 		F1B260E21FEC92FD004B3C7A /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B260E11FEC92FD004B3C7A /* Model.swift */; };
 		F1B260E51FEC98BF004B3C7A /* MoyaDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B260E41FEC98BF004B3C7A /* MoyaDemoViewController.swift */; };
+		F1C1841C20216FF600A6836E /* ButtonsDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C1841B20216FF600A6836E /* ButtonsDemoViewController.swift */; };
 		F1E66270200C82A1009EED6D /* TopicSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E6626F200C82A1009EED6D /* TopicSearchViewController.swift */; };
 		F1E66273200C8B81009EED6D /* CommentInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E66272200C8B81009EED6D /* CommentInputView.swift */; };
 		F1E66276200CA564009EED6D /* CommentInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E66275200CA564009EED6D /* CommentInputViewController.swift */; };
@@ -272,6 +278,7 @@
 		F125F9FA1FCD3EFB00C47EFC /* MineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineViewController.swift; sourceTree = "<group>"; };
 		F125F9FC1FCD3F1600C47EFC /* RecruitmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecruitmentViewController.swift; sourceTree = "<group>"; };
 		F125F9FE1FCD3F2300C47EFC /* NoticeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeViewController.swift; sourceTree = "<group>"; };
+		F12EBBB92045035800C561A2 /* RxSwiftDemo1VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxSwiftDemo1VC.swift; sourceTree = "<group>"; };
 		F134DF24200702E200B394AD /* UITabBar+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITabBar+Extension.swift"; sourceTree = "<group>"; };
 		F141B31B1FEB62FE00FF05C4 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		F141B3211FEB818600FF05C4 /* UPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UPageViewController.swift; sourceTree = "<group>"; };
@@ -316,6 +323,10 @@
 		F1970CD3200747E700EC46B9 /* FPSLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FPSLabel.swift; sourceTree = "<group>"; };
 		F1970CD82007593E00EC46B9 /* BaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
 		F1A05E772010903500F6657D /* TopicDetailHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicDetailHeaderView.swift; sourceTree = "<group>"; };
+		F1A2CD67202A93CE00D51DA4 /* ArchitectureDemoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchitectureDemoVC.swift; sourceTree = "<group>"; };
+		F1A2CD69202A953A00D51DA4 /* MVCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVCViewController.swift; sourceTree = "<group>"; };
+		F1A2CD6B202A954900D51DA4 /* MVPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVPViewController.swift; sourceTree = "<group>"; };
+		F1A2CD6D202A955800D51DA4 /* MVVMViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMViewController.swift; sourceTree = "<group>"; };
 		F1A5A8592005EF4E00F57E80 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
 		F1A7600B20085E9200C44DE4 /* FileManagerUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManagerUtil.swift; sourceTree = "<group>"; };
 		F1A7600D20085F1200C44DE4 /* GCDUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCDUtil.swift; sourceTree = "<group>"; };
@@ -340,6 +351,7 @@
 		F1B260DF1FEC92A0004B3C7A /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		F1B260E11FEC92FD004B3C7A /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		F1B260E41FEC98BF004B3C7A /* MoyaDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoyaDemoViewController.swift; sourceTree = "<group>"; };
+		F1C1841B20216FF600A6836E /* ButtonsDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonsDemoViewController.swift; sourceTree = "<group>"; };
 		F1E6626F200C82A1009EED6D /* TopicSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicSearchViewController.swift; sourceTree = "<group>"; };
 		F1E66272200C8B81009EED6D /* CommentInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentInputView.swift; sourceTree = "<group>"; };
 		F1E66275200CA564009EED6D /* CommentInputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentInputViewController.swift; sourceTree = "<group>"; };
@@ -1150,6 +1162,14 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		F12EBBB82045033B00C561A2 /* RxSwiftDemo1 */ = {
+			isa = PBXGroup;
+			children = (
+				F12EBBB92045035800C561A2 /* RxSwiftDemo1VC.swift */,
+			);
+			path = RxSwiftDemo1;
+			sourceTree = "<group>";
+		};
 		F134DF23200702D100B394AD /* UITabBar */ = {
 			isa = PBXGroup;
 			children = (
@@ -1161,6 +1181,9 @@
 		F141B3191FEB61CA00FF05C4 /* Demos */ = {
 			isa = PBXGroup;
 			children = (
+				F12EBBB82045033B00C561A2 /* RxSwiftDemo1 */,
+				F1A2CD66202A93AE00D51DA4 /* ArchitectureDemo */,
+				F1C1841A20216FDB00A6836E /* ButtonsDemo */,
 				F1616275201AFD6C00440238 /* SQLiteDemo */,
 				F125619F200EF75C0099360C /* NightThemeDemo */,
 				F1AAFD0C200DD93E00667CA5 /* RxSwiftDemo */,
@@ -1347,6 +1370,17 @@
 			path = FPSLabel;
 			sourceTree = "<group>";
 		};
+		F1A2CD66202A93AE00D51DA4 /* ArchitectureDemo */ = {
+			isa = PBXGroup;
+			children = (
+				F1A2CD67202A93CE00D51DA4 /* ArchitectureDemoVC.swift */,
+				F1A2CD69202A953A00D51DA4 /* MVCViewController.swift */,
+				F1A2CD6B202A954900D51DA4 /* MVPViewController.swift */,
+				F1A2CD6D202A955800D51DA4 /* MVVMViewController.swift */,
+			);
+			path = ArchitectureDemo;
+			sourceTree = "<group>";
+		};
 		F1A76011200883E500C44DE4 /* NodeDemo */ = {
 			isa = PBXGroup;
 			children = (
@@ -1408,6 +1442,14 @@
 				F1B260E41FEC98BF004B3C7A /* MoyaDemoViewController.swift */,
 			);
 			path = MoyaDemo;
+			sourceTree = "<group>";
+		};
+		F1C1841A20216FDB00A6836E /* ButtonsDemo */ = {
+			isa = PBXGroup;
+			children = (
+				F1C1841B20216FF600A6836E /* ButtonsDemoViewController.swift */,
+			);
+			path = ButtonsDemo;
 			sourceTree = "<group>";
 		};
 		F1E66271200C8B76009EED6D /* CommentInputView */ = {
@@ -1723,6 +1765,7 @@
 			files = (
 				F161626F201ACA0400440238 /* BookListViewController.swift in Sources */,
 				F100050B20118C4E00071D44 /* UIBarButtonItem+Extension.swift in Sources */,
+				F1A2CD6A202A953A00D51DA4 /* MVCViewController.swift in Sources */,
 				F12561EE200F498B0099360C /* HTTPTool.swift in Sources */,
 				F1256193200EECDC0099360C /* LoginViewController.swift in Sources */,
 				F1AAFD04200DCAB800667CA5 /* UIImage+Extension.swift in Sources */,
@@ -1735,10 +1778,12 @@
 				F1A7600F200880D500C44DE4 /* UIApplication+Extension.swift in Sources */,
 				F10005132011BA0000071D44 /* HistorySearchCell.swift in Sources */,
 				F1FE27AB20102FC0004EEF6A /* TopicListViewController.swift in Sources */,
+				F1A2CD68202A93CE00D51DA4 /* ArchitectureDemoVC.swift in Sources */,
 				F1A5A85B2005F1C000F57E80 /* String+Extension.swift in Sources */,
 				F15F96C61FECA5F600FFEB93 /* EmptyDataSet.swift in Sources */,
 				F1E66276200CA564009EED6D /* CommentInputViewController.swift in Sources */,
 				F1A760202008A03100C44DE4 /* UILabel+Extension.swift in Sources */,
+				F1A2CD6C202A954900D51DA4 /* MVPViewController.swift in Sources */,
 				F1B260E01FEC92A0004B3C7A /* UIViewExtension.swift in Sources */,
 				F1FE27A920102E6D004EEF6A /* PageContentView.swift in Sources */,
 				F141B33D1FEBA1F900FF05C4 /* UIColor+Color.swift in Sources */,
@@ -1755,6 +1800,7 @@
 				F1A7600C20085E9200C44DE4 /* FileManagerUtil.swift in Sources */,
 				F1A760152008886200C44DE4 /* LeftAlignedCollectionViewFlowLayout.swift in Sources */,
 				F12561E6200F20BE0099360C /* Observable+Operators.swift in Sources */,
+				F12EBBBA2045035800C561A2 /* RxSwiftDemo1VC.swift in Sources */,
 				F1970CCD2007454300EC46B9 /* AppDelegate.swift in Sources */,
 				F1256190200EE9870099360C /* AnswersEvents.swift in Sources */,
 				F141B33A1FEB933200FF05C4 /* UIScrollView+ParallaxHeader.swift in Sources */,
@@ -1792,6 +1838,7 @@
 				F1256198200EEECE0099360C /* SFHandoffSafariViewController.swift in Sources */,
 				F1FE27A520102D37004EEF6A /* PageTitleView.swift in Sources */,
 				F12561E8200F20BE0099360C /* Swift+Extension.swift in Sources */,
+				F1A2CD6E202A955800D51DA4 /* MVVMViewController.swift in Sources */,
 				F1616277201B037400440238 /* ItemModel.swift in Sources */,
 				F1B260E51FEC98BF004B3C7A /* MoyaDemoViewController.swift in Sources */,
 				F143F6771FECE64E00A3BE55 /* BaseCollectionViewCell.swift in Sources */,
@@ -1819,6 +1866,7 @@
 				F15A024C200841C300F380E8 /* UserDefaultsUtil.swift in Sources */,
 				F1970CD12007467E00EC46B9 /* AppSetup.swift in Sources */,
 				F141B3221FEB818600FF05C4 /* UPageViewController.swift in Sources */,
+				F1C1841C20216FF600A6836E /* ButtonsDemoViewController.swift in Sources */,
 				F1A7601D2008989800C44DE4 /* NodeHeaderView.swift in Sources */,
 				F125F9FB1FCD3EFB00C47EFC /* MineViewController.swift in Sources */,
 				F125F9FD1FCD3F1600C47EFC /* RecruitmentViewController.swift in Sources */,

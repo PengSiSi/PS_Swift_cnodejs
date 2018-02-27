@@ -28,6 +28,14 @@ class TopicViewController: BaseViewController {
         setupAddButton()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        // 可以旋转
+        isAllowAutorotate = true
+        if isAllowAutorotate {
+        }
+    }
+    
     // 设置界面
     private func setupUI() {
         let titles = ["全部", "精华", "分享", "问答", "测试"]

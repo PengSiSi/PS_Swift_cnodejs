@@ -15,12 +15,13 @@ let settingCellID = "MineCell"
 
 class SettingViewController: UITableViewController {
     
+    /// 数据源
     var dataArray: [String]?
     var cacheSize: Int = FileManager.fileSizeOfCache()
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Demos"
-        dataArray = ["Demo1", "Demo2", "下拉放大", "Moya Demo", "跳转到webView", "清除缓存", "给我评分", "意见反馈", "Node Demo", "CommentInputDemo", "RxSwift使用", "夜间模式", "SQLite使用"]
+        dataArray = ["Demo1", "Demo2", "下拉放大", "Moya Demo", "跳转到webView", "清除缓存", "给我评分", "意见反馈", "Node Demo", "CommentInputDemo", "RxSwift使用", "夜间模式", "SQLite使用", "根据数据源创建按钮", "架构Demo", "TableViewCell添加动效，当前页面", "RxSwift控件扩展"]
         setupUI()
     }
     
@@ -28,6 +29,8 @@ class SettingViewController: UITableViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
 //        UIApplication.changeOrientationTo(landscapeRight: true)
+        // tableView的动效
+        self.animateTable()
     }
 }
 
@@ -132,6 +135,32 @@ extension SettingViewController {
         if indexPath.row == 12 {
             self.navigationController?.pushViewController(ReadHistoryViewController(), animated: true)
         }
+        if indexPath.row == 13 {
+            self.navigationController?.pushViewController(ButtonsDemoViewController(), animated: true)
+        }
+        if indexPath.row == 14 {
+          
+      self.navigationController?.pushViewController(ArchitectureDemoVC(), animated: true)
+        }
+        if indexPath.row == 16 {
+            self.navigationController?.pushViewController(RxSwiftDemo1VC(), animated: true)
+        }
+    }
+    
+    override func tableView(_ tableView: UITableView, didHighlightRowAt indexPath: IndexPath) {
+        let cell = self.tableView.cellForRow(at: indexPath)
+        UIView.beginAnimations(nil, context: nil)
+        UIView.setAnimationDuration(0.2) //设置动画时间
+        cell?.transform = CGAffineTransform(scaleX: 0.9, y: 0.9)
+        UIView.commitAnimations()
+    }
+    
+    override func tableView(_ tableView: UITableView, didUnhighlightRowAt indexPath: IndexPath) {
+        let cell = self.tableView.cellForRow(at: indexPath)
+        UIView.beginAnimations(nil, context: nil)
+        UIView.setAnimationDuration(0.2) //设置动画时间
+        cell?.transform = CGAffineTransform(scaleX: 1.0, y: 1.0)
+        UIView.commitAnimations()
     }
 }
 
@@ -187,4 +216,21 @@ extension SettingViewController: MFMailComposeViewControllerDelegate {
             break
         }
     }
+}
+
+extension SettingViewController {
+    
+    // TableView的动效
+    func animateTable() {
+        let cells = self.tableView.visibleCells
+        let tableViewHeight = self.tableView.bounds.height
+        for (index, cell) in cells.enumerated() {
+            cell.transform = CGAffineTransform(translationX: 0, y: tableViewHeight)
+            UIView.animate(withDuration: 1.0, delay: 0.05 * Double(index), usingSpringWithDamping: 0.8, initialSpringVelocity: 0, options: [], animations: {
+                cell.transform = CGAffineTransform(translationX: 0, y: 0)
+            }, completion: nil)
+        }
+    }
+    
+    
 }

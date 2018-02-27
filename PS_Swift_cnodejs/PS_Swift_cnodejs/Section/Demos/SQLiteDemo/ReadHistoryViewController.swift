@@ -31,7 +31,8 @@ class ReadHistoryViewController: BaseViewController {
     
     // 数据源
     private var dataArray: [ItemModel]? = [ItemModel]()
-    
+    private var readHistoryArray: [ItemModel]? = [ItemModel]()
+
     override func viewDidLoad() {
         super.viewDidLoad()
         initialData()
@@ -40,6 +41,10 @@ class ReadHistoryViewController: BaseViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        // 查看数据库记录
+        self.readHistoryArray = SQLiteDatabase.instance?.loadReadHistory(count: 2000) ?? []
+        log.info(SQLiteDatabase.instance?.loadReadHistory(count: 2000) ?? [].count)
+        tableView.reloadData()
     }
 }
 
@@ -56,6 +61,11 @@ extension ReadHistoryViewController {
 extension ReadHistoryViewController {
     
     private func setupUI() {
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, action: {
+            GCDUtil.runOnBackgroundThread {
+
+            }
+        })
         self.view.addSubview(self.tableView)
         tableView.snp.makeConstraints {
             $0.edges.equalToSuperview()

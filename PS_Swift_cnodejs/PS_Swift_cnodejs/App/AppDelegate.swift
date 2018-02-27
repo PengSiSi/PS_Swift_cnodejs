@@ -6,15 +6,20 @@
 //  Copyright © 2017年 思 彭. All rights reserved.
 
 // Swift新特性： https://github.com/ReverseScale/Swift4.0NewFeature
+// 屏幕旋转链接： http://www.cocoachina.com/ios/20180129/22035.html
 
 import UIKit
 import Alamofire
 import IQKeyboardManagerSwift
 
+// 是否允许旋转
+var isAllowAutorotate: Bool = false
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    
     var orientation: UIInterfaceOrientationMask = .portrait
 
     // 检测网络状态
@@ -28,7 +33,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         AppSetup.prepare()
         // 基础配置
         configureBase()
-        
+
         // 数据库初始化
         SQLiteDatabase.initDatabase()
         
@@ -72,8 +77,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     // 只允许竖屏
+    // 屏幕旋转时会最后调用Appdelegate中此方法，在子控制器设置isAllowAutorotate值即可
     func application(_ application: UIApplication, supportedInterfaceOrientationsFor window: UIWindow?) -> UIInterfaceOrientationMask {
-        return orientation
+        if isAllowAutorotate {
+            return [.portrait, .landscapeLeft, .landscapeRight]
+        } else {
+            return .portrait
+        }
     }
     
     func applicationWillResignActive(_ application: UIApplication) {
